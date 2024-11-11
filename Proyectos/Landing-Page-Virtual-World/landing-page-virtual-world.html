@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 -->
+    <header id="header">
+        <img src="" alt="" id="header-img">
+        <nav id="nav-bar">
+            <a href="#header" class="nav-link">
+                <h1>Virtual World</h1>
+            </a>
+            <div>
+                <a href="#about" class="nav-link">Sobre Monstruos</a>
+                <a href="#video" class="nav-link">Mundo Virtual</a>
+                <a href="#form" class="nav-link">¡Adéntrate!</a>
+            </div>
+        </nav>
+    </header>
+    <!-- 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22 -->
+    <main>
+        <div class="toomuchtext">
+            <h1>¡Explora el Mundo Virtual y Descubre a tu Nuevo Compañero!</h1>
+            <p>Únete a la aventura y adéntrate en un mundo cibernético lleno de criaturas extraordinarias.</p>
+            <a href="#form" class="btn">Únete Ahora</a>
+        </div>
+        <div id="about" class="toomuchtext">
+            <h1>¿Qué son estos Monstruos Virtuales?</h1>
+            <p>Los monstruos virtuales son entidades digitales que evolucionan y batallan en mundos simulados, adaptándose a tus emociones y decisiones. Con habilidades y personalidades impredecibles, pueden ser grandes guardianes o compañeros muy traviesos, siempre listos para desafiarte en tu aventura tecnológica.</p>
+            <a href="#form" class="btn">¿Te atreves a descubrirlos?</a>
+        </div>
+        <iframe src="https://www.youtube.com/embed/iWCenGIIBVE?si=CoQ2mx71e3o9YbQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="video"></iframe>
+        <form action="https://www.freecodecamp.com/email-submit" id="form" method="POST">
+            <input type="text" name="name" id="name" placeholder="Nombre Completo">
+            <input type="email" name="email" id="email" placeholder="CorreoElectrónico@email.com">
+            <input type="submit" value="Enviar" id="submit" class="btn">
+        </form>
+    </main>
+</body>
+</html>

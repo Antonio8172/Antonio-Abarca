@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de encuesta - Dulcemanía</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <section>
+        <!-- 1, 2 -->
+        <h1 id="title">Formulario de encuesta - Dulcemanía</h1>
+        <!-- 3, 4 -->
+        <p id="description">Muchas gracias por tomarse el tiempo para ayudarnos a mejorar nuestra plataforma</p>
+        <!-- 5 -->
+        <form id="survey-form" action="https://register-demo.freecodecamp.org" method="POST">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <!-- 6, 7, 8, 9, 19, 22, 25, 28 -->
+                <label for="name" id="name-label">
+                    Nombre completo: <input type="text" id="name" placeholder="Nombre completo" required>
+                </label>
+                <br>
+                <!-- 10, 11, 12, 13, 20, 23, 26, 29 -->
+                <label for="email" id="email-label">
+                    Email: <input type="email" id="email" placeholder="correo@email.com" required>
+                </label>
+                <br>
+                <!-- 14, 15, 16, 17, 18, 21, 24, 27, 30 -->
+                <label for="number" id="number-label">
+                    Número de teléfono: <input type="number" id="number" min=9 max=11 placeholder="987654321">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Encuesta</legend>
+                <!-- 31, 32, 33 -->
+                <label for="dropdown">
+                    ¿Recomendarías los productos de Dulcemanía a los demás?
+                    <br>
+                    <select name="recommend" id="dropdown">
+                        <option value="0">--</option>
+                        <option value="1">Si</option>
+                        <option value="2">No</option>
+                    </select>
+                </label>
+                <br>
+                <!-- 34, 35, 36, 37, 38 -->
+                En una escala del 0 al 10, ¿Qué tan satisfecho te sientes con nuestros productos?
+                <br>
+                <label for="satisfaction-0">
+                    0<input type="radio" id="satisfaction-0" name="satisfaction" value="0">
+                </label>
+                <label for="satisfaction-1">
+                    1<input type="radio" id="satisfaction-1" name="satisfaction" value="1">
+                </label>
+                <label for="satisfaction-2">
+                    2<input type="radio" id="satisfaction-2" name="satisfaction" value="2">
+                </label>
+                <label for="satisfaction-3">
+                    3<input type="radio" id="satisfaction-3" name="satisfaction" value="3">
+                </label>
+                <label for="satisfaction-4">
+                    4<input type="radio" id="satisfaction-4" name="satisfaction" value="4">
+                </label>
+                <label for="satisfaction-5">
+                    5<input type="radio" id="satisfaction-5" name="satisfaction" value="5">
+                </label>
+                <label for="satisfaction-6">
+                    6<input type="radio" id="satisfaction-6" name="satisfaction" value="6">
+                </label>
+                <label for="satisfaction-7">
+                    7<input type="radio" id="satisfaction-7" name="satisfaction" value="7">
+                </label>
+                <label for="satisfaction-8">
+                    8<input type="radio" id="satisfaction-8" name="satisfaction" value="8">
+                </label>
+                <label for="satisfaction-9">
+                    9<input type="radio" id="satisfaction-9" name="satisfaction" value="9">
+                </label>
+                <label for="satisfaction-10">
+                    10<input type="radio" id="satisfaction-10" name="satisfaction" value="10">
+                </label>
+                <br>
+                <hr>
+                <!-- 39, 40 -->
+                ¿Qué te gustaría mejorar en nuestros productos?
+                <br>
+                <label for="digital">
+                    <input type="checkbox" id="digital" value="0">Plataforma digital
+                </label>
+                <label for="more-candy">
+                    <input type="checkbox" id="more-candy" value="1">Más dulces
+                </label>
+                <label for="prices">
+                    <input type="checkbox" id="prices" value="1">Precios
+                </label>
+                <br>
+                <hr>
+                <!-- 41 -->
+                <label for="sugestion">
+                    Posibles sugerencias
+                    <br>
+                    <textarea name="sugestion" id="sugestion" placeholder="Podrían implementar nuevos..."></textarea>
+                </label>
+            </fieldset>
+            <!-- 42, 43, 44 -->
+            <input type="submit" id="submit" value="Enviar">
+        </form>
+    </section>
+</body>
+</html>

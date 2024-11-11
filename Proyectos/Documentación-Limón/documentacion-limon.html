@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación Técnica - Limón</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header><strong>LIMÓN</strong></header>
+        <a class="nav-link" href="#Introducción">Introducción</a>
+        <a class="nav-link" href="#Sintaxis_Básica">Sintaxis Básica</a>
+        <a class="nav-link" href="#Tipos_de_Datos">Tipos de Datos</a>
+        <a class="nav-link" href="#Estructuras_de_Control">Estructuras de Control</a>
+        <a class="nav-link" href="#Funciones">Funciones</a>
+        <a class="nav-link" href="#Manejo_de_Errores">Manejo de Errores</a>
+    </nav>
+    <main id="main-doc">
+        <hr>
+            <section class="main-section" id="Introducción">
+                <header>Introducción</header>
+
+                <p><strong>Limón</strong> es un lenguaje de programación completamente inventado para los propósitos de este documento técnico. No tiene ninguna implementación funcional en el mundo real, pero está diseñado como una herramienta conceptual para explorar cómo podría ser la estructura, las características y la documentación de un lenguaje de programación ficticio. La creación de lenguajes imaginarios como <strong>Limón</strong> nos permite reflexionar sobre los elementos esenciales que componen un lenguaje de programación y cómo pueden adaptarse para mejorar la claridad, la eficiencia y la usabilidad en el desarrollo de software.</p>
+
+                <p>Todo el contenido en esta documentación ha sido creado por <a href="https://chatgpt.com" target="_blank">ChatGPT</a>, un asistente de inteligencia artificial, con el fin de ilustrar cómo podría lucir la documentación técnica de un lenguaje ficticio. El objetivo es mostrar una estructura coherente y práctica para cualquier lector que desee aprender los conceptos básicos de un lenguaje inventado. Aunque <strong>Limón</strong> no existe fuera de este contexto, su documentación ha sido cuidadosamente elaborada para parecer lo más realista posible, siguiendo convenciones comunes en la documentación técnica de lenguajes de programación conocidos.</p>
+
+                <ul>
+                    <li>Este documento no representa un lenguaje real, sino que ha sido creado exclusivamente con fines ilustrativos y educativos. Aunque su estructura, términos y ejemplos siguen un formato típico de documentación técnica, no debe interpretarse como una descripción de un lenguaje de programación que pueda ser implementado o utilizado en proyectos de desarrollo. <strong>Limón</strong> es completamente ficticio y ha sido diseñado para demostrar cómo podría organizarse la información técnica sobre un lenguaje que, en la práctica, no existe. Cualquier similitud con lenguajes reales es puramente coincidencial.</li>
+
+                </ul>
+            </section>
+            <hr>
+            <section class="main-section" id="Sintaxis_Básica">
+                <header>Sintaxis Básica</header>
+
+                <p><strong>Limón</strong> es un lenguaje basado en expresiones sencillas, diseñado para ser fácil de leer y escribir. A diferencia de muchos lenguajes tradicionales que pueden requerir una sintaxis compleja y detallada, <strong>Limón</strong> apuesta por la simplicidad en su estructura. Esto lo convierte en una opción ideal para principiantes o para proyectos donde la legibilidad del código es primordial. Al eliminar los elementos superfluos, <strong>Limón</strong> permite a los desarrolladores concentrarse en la lógica y la funcionalidad del programa, en lugar de en los detalles técnicos que a menudo complican otros lenguajes.</p>
+
+                <p>La sintaxis de <strong>Limón</strong> es minimalista, enfocada en reducir la complejidad innecesaria. Cada instrucción sigue un formato claro y directo, sin la necesidad de símbolos o estructuras que dificulten la comprensión. Por ejemplo, las declaraciones de variables y funciones en <strong>Limón</strong> utilizan palabras clave intuitivas que reflejan el propósito del código, facilitando su lectura tanto para el desarrollador como para cualquier colaborador. Esta filosofía de diseño busca no solo optimizar el proceso de programación, sino también hacer que el código sea fácilmente mantenible y adaptable a cambios futuros.</p>
+
+                <div class="code">
+                    <code>definir variable = 10;</code>
+                    <code>definir nombre = "Juan";</code>
+                    <code>definir esActivo = verdadero;</code>
+                    <code>definir resultado = sumar(5, 7);</code>
+                    <code>definir lista = [1, 2, 3, 4];</code>
+                </div>
+
+                <ul>
+                    <li>Las declaraciones siempre terminan con punto y coma, siguiendo una convención clara y consistente en <strong>Limón</strong>. Este símbolo no solo marca el final de una instrucción, sino que también contribuye a la legibilidad del código y evita posibles ambigüedades durante la ejecución. Por ejemplo, en las declaraciones como <code>definir variable = 10;</code> o <code>definir lista = [1, 2, 3, 4];</code>, el punto y coma garantiza que el intérprete de <strong>Limón</strong> entienda correctamente cuándo ha finalizado una instrucción. Esta regla uniforme también ayuda a evitar errores comunes, como la fusión accidental de múltiples expresiones, algo que puede suceder en lenguajes que omiten este símbolo.</li>
+                </ul>
+            </section>
+            <hr>
+            <section class="main-section" id="Tipos_de_Datos">
+                <header>Tipos de Datos</header>
+                <p><strong>Limón</strong> soporta varios tipos de datos primitivos como números, cadenas, y booleanos. Estos tipos de datos básicos permiten a los desarrolladores almacenar y manipular información fundamental de manera eficiente. Los números en <strong>Limón</strong> pueden ser enteros o decimales, lo que facilita tanto cálculos simples como operaciones más precisas. Las cadenas permiten almacenar texto, mientras que los booleanos representan valores lógicos como <code>verdadero</code> o <code>falso</code>. Estos tres tipos de datos son la base de muchas operaciones comunes en la programación y son esenciales para la construcción de cualquier lógica en <strong>Limón</strong>.</p>
+
+                <code>cadena nombre = "Limón";</code>
+                
+                <p>Los tipos de datos pueden ser explícitamente declarados o inferidos por el compilador. Esto significa que el desarrollador puede optar por especificar el tipo de cada variable, como en el ejemplo anterior con <code>cadena</code>, o bien dejar que el compilador de <strong>Limón</strong> deduzca el tipo de dato a partir del valor asignado. Esta flexibilidad permite una mayor comodidad durante el desarrollo, ya que en algunos casos se puede escribir código más conciso sin sacrificar la seguridad en los tipos. <strong>Limón</strong> equilibra la simplicidad con el control, dándole al programador la opción de elegir entre la inferencia automática o la declaración explícita de tipos.</p>
+                
+                <ul>
+                    <li>Números enteros y decimales están soportados, permitiendo operaciones matemáticas tanto simples como avanzadas. Un número entero, como <code>definir edad = 25;</code>, es útil para contar elementos, mientras que un número decimal, como <code>definir precio = 19.99;</code>, es ideal para cálculos que requieren mayor precisión, como aquellos involucrados en operaciones financieras o científicas.</li>
+                </ul>
+            </section>
+            <hr>
+            <section class="main-section" id="Estructuras_de_Control">
+                <header>Estructuras de Control</header>
+                <p><strong>Limón</strong> cuenta con estructuras de control como condicionales y bucles para facilitar la toma de decisiones y la repetición de tareas. Las condicionales permiten que el programa evalúe ciertas condiciones y ejecute bloques de código en consecuencia, lo que es esencial para adaptarse a diferentes situaciones durante la ejecución del programa. Por ejemplo, una estructura condicional puede verificar si una variable cumple con un valor específico antes de ejecutar una acción, como en <code>si (condicion) { ejecutar_algo(); }</code>. Esto le da al lenguaje la flexibilidad necesaria para manejar comportamientos dinámicos y reacciones basadas en la lógica de la aplicación.</p>
+                
+                <p>El lenguaje también soporta estructuras de control avanzadas como bucles <em>"mientras"</em>, que permiten repetir una sección de código mientras una condición sea verdadera. Los bucles son fundamentales para iterar sobre colecciones de datos o ejecutar tareas repetitivas sin duplicar código. Por ejemplo, un bucle <em>"mientras"</em> en <strong>Limón</strong> podría verificar constantemente si un valor es menor que cierto límite, ejecutando una acción en cada iteración. Estas estructuras avanzadas proporcionan las herramientas necesarias para controlar el flujo del programa de manera eficiente y limpia, permitiendo la automatización de tareas repetitivas sin necesidad de escribir múltiples veces la misma instrucción.</p>
+                
+                <ul>
+                    <li>Las condiciones se definen con operadores lógicos, como <code>y</code>, <code>o</code>, y <code>no</code>, que permiten evaluar combinaciones de condiciones. Por ejemplo, <code>si (a es mayor que 5 y b es menor que 10) { hacer_algo(); }</code> ejecutaría el bloque de código solo si ambas condiciones son verdaderas. Estos operadores permiten construir expresiones complejas que pueden influir en las decisiones del programa de manera más precisa y detallada.</li>
+                </ul>
+                
+            </section>
+            <hr>
+            <section class="main-section" id="Funciones">
+                <header>Funciones</header>
+                <p>Las funciones en <strong>Limón</strong> permiten organizar el código en bloques reutilizables, facilitando la modularidad y la claridad en los programas. Al encapsular una serie de instrucciones dentro de una función, los desarrolladores pueden ejecutar esa lógica en cualquier parte del código simplemente llamando a la función por su nombre. Esto no solo evita la duplicación de código, sino que también facilita la lectura y el mantenimiento de los programas. Por ejemplo, la función <code>saludar</code> se puede invocar múltiples veces para realizar la misma tarea, en lugar de escribir la instrucción <code>imprimir("Hola Mundo!");</code> cada vez que se necesite.</p>
+
+                <code>función saludar() { imprimir("Hola Mundo!"); }</code>
+
+                <p>Las funciones pueden recibir parámetros y devolver valores, lo que aumenta su flexibilidad y capacidad para interactuar con diferentes partes del programa. Al aceptar parámetros, una función en <strong>Limón</strong> puede adaptarse a diferentes situaciones sin cambiar su definición básica. Por ejemplo, una función de suma podría aceptar dos números como parámetros y devolver su resultado. Esto permite que las funciones sean más dinámicas y útiles en una variedad de contextos. Además, el valor de retorno proporciona una forma de comunicar el resultado de la función a otras partes del programa, facilitando cálculos y la toma de decisiones en base a esos resultados.</p>
+
+                <ul>
+                    <li>Las funciones se definen con la palabra clave <code>función</code>, seguida del nombre de la función y una lista de parámetros opcionales. Por ejemplo, <code>función sumar(a, b) { devolver a + b; }</code> define una función que toma dos parámetros, <code>a</code> y <code>b</code>, y devuelve su suma. Esta sintaxis simple y directa facilita la creación de funciones de manera intuitiva, permitiendo que los desarrolladores escriban código de manera más rápida y sin complicaciones innecesarias.</li>
+                </ul>
+
+            </section>
+            <hr>
+            <section class="main-section" id="Manejo_de_Errores">
+                <header>Manejo de Errores</header>
+                <p><strong>Limón</strong> implementa un sistema sencillo para manejar errores a través de bloques de captura, permitiendo a los desarrolladores gestionar excepciones de manera efectiva. Este enfoque se basa en el uso de bloques <code>tratar</code> para envolver el código que podría generar un error y bloques <code>capturar</code> para definir cómo se debe manejar ese error si ocurre. Este sistema facilita el control del flujo del programa, asegurando que cualquier situación inesperada se aborde de manera ordenada, en lugar de provocar una falla abrupta del programa. Por ejemplo, en el bloque <code>tratar { ejecutar(); }</code>, se intenta ejecutar la función <code>ejecutar</code>, y si se produce un error durante esta ejecución, el control se transfiere automáticamente al bloque <code>capturar (Error) { manejar_error(); }</code>, donde se define la respuesta al error.</p>
+
+                <code>tratar { ejecutar(); } capturar (Error) { manejar_error(); }</code>
+                
+                <p>El manejo de errores es fundamental para asegurar que el programa se ejecute correctamente bajo diversas condiciones. Sin un manejo adecuado, los errores pueden llevar a resultados inesperados o, en el peor de los casos, a la interrupción completa del programa. <strong>Limón</strong> permite a los desarrolladores anticiparse a posibles fallos y proporcionar soluciones adecuadas, mejorando la robustez y la confiabilidad del código. Este enfoque también facilita la depuración, ya que permite a los programadores capturar y registrar información sobre errores específicos, lo que a su vez les ayuda a identificar y corregir problemas de manera más efectiva.</p>
+                
+                <ul>
+                    <li>Los errores se manejan con bloques <code>tratar</code> y <code>capturar</code>, que permiten una separación clara entre el código que podría fallar y la lógica para manejar esos fallos. Por ejemplo, al utilizar <code>tratar</code>, los desarrolladores pueden incluir múltiples instrucciones que podrían generar excepciones, y mediante <code>capturar</code>, especificar cómo responder ante diferentes tipos de errores, lo que aporta flexibilidad y control al proceso de desarrollo. Esta estructura no solo mejora la calidad del software, sino que también proporciona una experiencia más suave para los usuarios finales.</li>
+                </ul>
+                
+            </section>
+    </main>
+</body>
+</html>

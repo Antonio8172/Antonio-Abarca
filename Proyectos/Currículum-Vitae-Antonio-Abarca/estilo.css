@@ -1,0 +1,237 @@
+/* General */
+:root {
+    --ColorFondo1: rgba(255, 247, 9, 0.495);
+    --ColorFondo2: rgba(0, 0, 0, 0.22);
+    --ColorFondo3: rgba(0, 0, 0, 0.139);
+    --ColorFondo4: #ffed85;
+    --ColorFondo5: #85ffed;
+    --ColorTexto1: rgba(0, 0, 0, 0.67);
+    --ColorTexto2: blue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-padding-top: 13rem;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CURRICULUM */
+.curriculum {
+    width: 60rem;
+    height: 90rem;
+    margin: 10rem auto 2rem;
+    display: grid;
+    grid-template-columns: 16rem 2fr;
+    grid-template-rows: repeat(5, 1fr);
+    border: 0.2rem solid black;
+    border-radius: 0.2rem;
+}
+h1 {
+    font-size: 2.2rem;
+    margin: 0 0 20px;
+    text-align: center;
+}
+h2 {
+    font-size: 1.7rem;
+    margin-top: 10px;
+}
+h3 {
+    font-size: 1.4rem;
+}
+h3.profesion {
+    margin: 5px 0;
+    text-align: center;
+}
+h3:not(.profesion) {
+    margin: 5px 0;
+}
+h4 {
+    font-size: 1.2rem;
+}
+h5 {
+    font-size: 1rem;
+}
+p {
+    margin: 5px 20px;
+}
+li {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+p,
+li {
+    font-size: 0.9rem;
+    text-align: justify;
+    line-height: 1.25rem;
+    color: var(--ColorTexto1);
+}
+ul{
+    width: 140px;
+}
+
+p:hover,
+li.contacto:hover {
+    color: var(--ColorTexto2);
+    border-color: blue;
+    cursor: pointer;
+}
+hr {
+    background-color: var(--ColorFondo2);
+    border:none;
+}
+hr.mediano {
+    width: 100%;
+    height: 6px;
+    margin: 0 auto;
+}
+hr.chico {
+    width: 100%;
+    height: 3px;
+}
+
+/* Cabecera */
+header {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: grid;
+    border-bottom: 0.2rem solid black;
+}
+.imagen {
+    background-color: var(--ColorFondo1);
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-right: 0.2rem solid black;
+    width:16rem;
+    height:19rem;
+}
+img {
+    width: 16rem;
+    height: 190px;
+    object-fit: cover;
+    object-position: 0 40%;
+    position: absolute;
+
+}
+.info-cabecera {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: auto 15px;
+}
+
+/* Datos */
+/* -lateral- */
+aside{
+    background-color: var(--ColorFondo1);
+    grid-column: 1/2;
+    grid-row: 2/6;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  11.5rem  22rem repeat(3, 1fr);
+    padding: 0 10px;
+    border-right: 0.2rem solid black;
+}
+.contacto {
+    grid-row: 1/2;
+}
+.habilidades {
+    grid-row: 2/5;
+}
+.idiomas {
+    grid-row: 5/6;
+}
+/* -principal- */
+main{
+    grid-column: 2/3;
+    grid-row: 2/6;
+    margin: 0 15px;
+}
+.contenido,
+h2,
+h3:not(.profesion),
+li.habilidades {
+    display: flex;
+    border-bottom: 1px dotted black;
+}
+.izquierda {
+    width: 22%;
+    padding: 12px 0 0 15px;
+}
+.izquierda ul li {
+    list-style-type:circle
+}
+.derecha {
+    width: 78%;
+    padding: 10px 0 0 0;
+}
+.derecha p {
+    margin: 5px 10px;
+    padding: 0.6rem;
+    border:1px solid black;
+}
+section.experiencia-laboral {
+    background-color: var(--ColorFondo3);
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+/* Barra de navegador */
+.nav-bar {
+    width: 100%;
+    height: 6rem;
+    background-color: white;
+    border-bottom: 0.2rem solid black;
+    position:fixed;
+    top:0;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 1;
+}
+
+.nav-link {
+    width: 15rem;
+    margin: 0.5rem;
+    text-transform: uppercase;
+    font-size:1.6rem;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    color: black;
+    background-color: var(--ColorFondo4);
+    border: 0.1rem solid black;
+    transition-duration: 0.2s;
+}
+.nav-link:hover {
+    background-color: var(--ColorFondo5);
+    transform: scale(1.2);
+}
+
+*:target {
+    animation: Remarcar 1.2s ease-in-out 1;
+}
+
+@keyframes Remarcar {
+    40% {
+        transform: scale(1.01);
+        background-color: var(--ColorFondo5);
+    }
+    50% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1.01);
+        background-color: var(--ColorFondo5);
+    }
+}

@@ -1,0 +1,92 @@
+:root{
+    --color-base:darkorchid;
+    --color-text: #fff;
+    --color-section-1:#203040;
+    --color-section-2:#f39c12;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+    background-color: var(--color-base);
+    color: var(--color-text);
+    padding-top: 7rem;
+}
+
+section {
+    padding: 30rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--color-section-1);
+}
+section {
+    background-color: var(--color-section-2);
+}
+
+hr {
+    border: 2px solid #141f2a;
+}
+#welcome-section h1 {
+    font-size: 3.5rem;
+}
+#welcome-section p {
+    font-size: 2rem;
+}
+span {
+    display: inline-block;
+    transform: scaleX(-1);
+}
+
+/* 11 */
+#navbar{
+    width:100%;
+    height: 7rem;
+    position:fixed;
+    top:0;
+    display:flex;
+    justify-content: flex-end;
+}
+
+#projects {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-tile {
+    background-color: #7fb7d8;
+    width: 505px;
+    min-width: 500pxd;
+    padding: 10px;
+    border:2px solid black;
+    border-radius: 10px;
+    margin:5px;
+}
+.project-tile>img {
+    width: 100%;
+}
+
+/* 12 */
+@media (max-width:600px){
+    #navbar{
+        display: none;
+    }
+    section {
+        padding: 10rem 3rem;
+    }
+}
+
+@keyframes change-padding-section {
+    
+}
