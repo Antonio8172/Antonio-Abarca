@@ -20,7 +20,7 @@ html {
 }
 body {
     background-color: var(--color-5);
-    color: var(--color-2);
+    color: white;
     padding-top: 7rem;
 }
 h1 {font-size: 3.5rem;}
@@ -57,7 +57,7 @@ section:nth-of-type(2) {padding: 86px 0;}
     margin: 4px;
     width: 160px;
     height: 90%;
-    color: var(--color-1);
+    color: white;
     font-size: 2rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -103,15 +103,15 @@ span {
     border:2px solid black;
     border-radius: 0 0 10px 10px;
     margin:5px;
+    text-decoration: none;
 }
 .project-tile img {
     width: 100%;
     border: 4px solid black;
 }
-.project-tile p {
-    color: var(--color-2);
-    text-decoration: none;
+#projects h1, .project-tile p {
     text-transform: uppercase;
+    color: white;
 }
 
 /* Sección de contactos */
