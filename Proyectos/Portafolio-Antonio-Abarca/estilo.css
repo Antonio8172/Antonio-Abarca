@@ -35,7 +35,7 @@ section {
     align-items: center;
 }
 hr {border: 2px solid var(--color-3);}
-section, hr:not(#navhr) {margin: 0 100px;}
+section, hr:not(#navhr) {margin: 0 130px;}
 
 section:first-of-type {padding: 313px 0;}
 section:nth-of-type(2) {padding: 86px 0;}
@@ -99,7 +99,7 @@ span {
     background-color: var(--color-3);
     width: 400px;
     min-width: 400px;
-    padding: 4px 4px 40px;
+    padding: 4px;
     border:2px solid black;
     border-radius: 0 0 10px 10px;
     margin:5px;
@@ -107,6 +107,11 @@ span {
 .project-tile img {
     width: 100%;
     border: 4px solid black;
+}
+.project-tile p {
+    color: var(--color-2);
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 /* Sección de contactos */
