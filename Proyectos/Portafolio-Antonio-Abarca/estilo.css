@@ -39,6 +39,7 @@ section, hr:not(#navhr) {margin: 0 130px;}
 
 section:first-of-type {padding: 313px 0;}
 section:nth-of-type(2) {padding: 86px 0;}
+section:nth-of-type(3) {padding: 300px 0;}
 
 /* Barra de navegación */
 /* 11 */
@@ -86,19 +87,17 @@ span {
 }
 
 /* Sección de proyectos */
-#projects {
+#projects div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
-#projects h1 {
-    position: absolute;
-    top: 23em;
+    justify-content: center;
+    align-items: center;
 }
 .project-tile {
     background-color: var(--color-3);
-    width: 400px;
-    min-width: 400px;
+    width: 350px;
+    min-width: 350px;
     padding: 4px;
     border:2px solid black;
     border-radius: 0 0 10px 10px;
@@ -113,16 +112,45 @@ span {
     text-transform: uppercase;
     color: white;
 }
+.project-tile:hover{
+    background-color: orangered;
+    color: black;
+    width:400px
+}
+.project-tile, .project-tile:hover{transition: 0.5s;}
 
 /* Sección de contactos */
-
+#contacts {
+    display: flex;
+    flex-direction: row;
+}
+#profile-link {
+    position: relative;
+    padding: 10px;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    bottom:0;
+}
+#profile-link:hover{
+    color: orangered;
+    bottom:-5px;
+}
+#profile-link, #profile-link:hover {transition: 0.2s;}
 
 /* Footer */
+footer {
+    padding: 50px 40px;
+    display: flex;
+}
+footer p {
+    font-size: 1.6rem;
+}
 
 
 /* Variedad de resoluciones */
 /* 12 */
-/* @media (max-width:600px){
+@media (max-width:600px){
     #navbar{
         display: none;
     }
@@ -130,9 +158,9 @@ span {
         padding: 10rem 3rem;
     }
 }
-*/
+
 
 /* Animaciones */
-/* @keyframes change-padding-section {
+@keyframes change-padding-section {
     
-} */
+}
