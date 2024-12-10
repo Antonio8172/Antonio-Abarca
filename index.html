@@ -1,0 +1,99 @@
+<!-- {% load static %} -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonio Abarca</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/cef9e79912.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div id="nav-start">
+            <a href="#welcome-section">Antonio Abarca</a>
+        </div>
+        <div id="nav-end">
+            <a href="#projects">Proyectos</a>
+            <a href="#about">Acerca de mi</a>
+            <a href="#contact">Contacto</a>
+        </div>
+    </nav>
+    <aside>
+        <!-- Modos Obscuro o Claro -->
+        <input id="dark-light-mode" type="checkbox" checked>
+        <div class="back-label">
+            <label for="dark-light-mode" class="base-label"><i class="fa-solid fa-circle-half-stroke"></i></label>
+        </div>Modo Claro/Obscuro
+        <!-- Traducciones -->
+        <input id="translate" type="radio" name="base-radio">
+        <div class="back-label">
+            <label for="translate" class="base-label"><i class="fa-solid fa-globe"></i></label>
+        </div>Traducción
+        <input id="spanish" type="radio" name="translate">
+        <label for="spanish" class="radio">Español</label>
+        <input id="english" type="radio" name="translate">
+        <label for="english" class="radio">Inglés</label>
+        <!-- Descargar Curriculum en distintos idiomas -->
+        <input id="download-cv" type="radio" name="base-radio">
+        <div class="back-label">
+            <label for="download-cv" class="base-label"><i class="fa-solid fa-circle-down"></i></label>
+        </div>
+        Descargar CV
+        <input id="spanish-cv" type="button">
+        <label for="spanish-cv" class="download">CV en Español</label>
+        <input id="english-cv" type="button">
+        <label for="english-cv" class="download">CV en Inglés</label>
+    </aside>
+
+    <main>
+        <section id="welcome-section">
+            <h1>¡Hola! Soy Antonio</h1>
+            <h2>un Ingeniero en Informática/Desarrollador Web</h2>
+        </section>
+        <hr>
+        <section id="about">
+            <p>Mi nombre es Antonio Abarca y soy Ingeniero en Informática y Desarrollador Web apasionado por crear soluciones digitales innovadoras y eficientes. Me especializo en el diseño y desarrollo de aplicaciones web modernas, con experiencia en tecnologías como HTML, CSS, JavaScript, y frameworks como Django y Flask. Me motiva la idea de combinar creatividad y lógica para resolver problemas y ofrecer experiencias digitales impactantes.</p>
+            <ul>
+                
+                {% for gc in grupo_conocimientos %}
+                    <h3>{{ gc.nombre }}</h3>
+                    {% for c in conocimientos %}
+                        {% if c.grupo_conocimiento == gc %}
+                            <li>
+                                {{ c.conocimiento }} <div class="bar {{ c.conocimiento }} {{ c.nivel }}"></div>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                {% endfor %}
+            </ul>
+                
+        </section>
+        <hr>
+        <section id="projects">
+            <h2>Estos son algunos de los proyectos que he realizado.. </h2>
+            <div>
+                {% for p in proyectos %}
+                    <a href="{{ p.url }}" target="_blank" rel="noopener noreferrer" class="carta-proyecto">
+                        <img src="{{ p.urlImg }}" alt="{{ p.nombre }}">
+                        <h3>{{ p.nombre }}</h3>
+                        <p>{{ p.descripcion }}</p>
+                    </a>
+                {% endfor %}
+            </div>
+        </section>
+        <hr>
+        <section id="contact">
+            <h2>¿Tienes una idea en mente?</h2>
+            <h3>Contáctame..</h3>
+            <div>
+                <a href="https://github.com/Antonio8172" target="_blank" rel="noopener noreferrer" id="profile-link"><i class="fab fa-github"></i> Github</a>
+                <a href="https://www.linkedin.com/in/antonio-abarca-millán-4ba6a929a/" target="_blank" rel="noopener noreferrer" id="profile-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope"></i> Email</a>
+                
+            </div>
+        </section>
+    </main>
+</body>
+</html>

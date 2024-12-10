@@ -1,0 +1,107 @@
+/* General */
+:root {
+    --color-base-1: #203040;
+    --color-base-2: #9932cc;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(200deg, var(--color-base-1) 10%, var(--color-base-2));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+main {
+    width: 90%;
+    background-color: #203040;
+}
+nav, .base-label {
+    background: rgba(255, 255, 255, 0.025);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+/* Barra de navegación */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 20px 0 5px;
+}
+nav div {
+    margin: 0 0 20px;
+}
+#nav-start {
+    font-size: 2.2rem;
+    display: none;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    width: 200px;
+    height: 100%;
+    padding: 7px 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+nav a:hover {
+    background-color: var(--color-base-2);
+}
+
+/* Opciones laterales */
+aside {
+    position: fixed;
+    top: 60px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.back-label {
+    margin: 5px;
+    background-color: var(--color-base-2);
+}
+.base-label {
+}
+.back-label, .base-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.base-label i {
+    font-size: 3rem;
+}
+aside input, aside label:not(.base-label) {
+    display: none;
+}
+aside input:checked + .back-label {
+    background-color: greenyellow;
+}
+aside input:checked +.back-label>label i {
+    color: var(--color-base-1);
+}
+
+
+/* Secciones */
+section {
+    width: 100%;
+    height: 92vh;
+    padding: 60px 20px 0;
+}
