@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/cef9e79912.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Menú de navegación -->
     <nav>
         <div id="nav-start">
             <a href="#welcome-section">Antonio Abarca</a>
@@ -23,24 +24,26 @@
     <aside>
         <!-- Modos Obscuro o Claro -->
         <input id="dark-light-mode" type="checkbox" checked>
-        <div class="back-label">
-            <label for="dark-light-mode" class="base-label"><i class="fa-solid fa-circle-half-stroke"></i></label>
-        </div>Modo Claro/Obscuro
+        <label for="dark-light-mode" class="base-label">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+            <span>Modo Claro/Oscuro</span>
+        </label>
         <!-- Traducciones -->
         <input id="translate" type="radio" name="base-radio">
-        <div class="back-label">
-            <label for="translate" class="base-label"><i class="fa-solid fa-globe"></i></label>
-        </div>Traducción
+        <label for="translate" class="base-label">
+            <i class="fa-solid fa-globe"></i>
+            <span>Traducción</span>
+        </label>
         <input id="spanish" type="radio" name="translate">
         <label for="spanish" class="radio">Español</label>
         <input id="english" type="radio" name="translate">
         <label for="english" class="radio">Inglés</label>
         <!-- Descargar Curriculum en distintos idiomas -->
         <input id="download-cv" type="radio" name="base-radio">
-        <div class="back-label">
-            <label for="download-cv" class="base-label"><i class="fa-solid fa-circle-down"></i></label>
-        </div>
-        Descargar CV
+        <label for="download-cv" class="base-label">
+            <i class="fa-solid fa-circle-down"></i>
+            <span>Descargar CV</span>
+        </label>
         <input id="spanish-cv" type="button">
         <label for="spanish-cv" class="download">CV en Español</label>
         <input id="english-cv" type="button">
@@ -48,42 +51,82 @@
     </aside>
 
     <main>
+        <!-- Sección de bienvenida -->
         <section id="welcome-section">
             <h1>¡Hola! Soy Antonio</h1>
             <h2>un Ingeniero en Informática/Desarrollador Web</h2>
         </section>
         <hr>
+        <!-- Sección con información -->
         <section id="about">
-            <p>Mi nombre es Antonio Abarca y soy Ingeniero en Informática y Desarrollador Web apasionado por crear soluciones digitales innovadoras y eficientes. Me especializo en el diseño y desarrollo de aplicaciones web modernas, con experiencia en tecnologías como HTML, CSS, JavaScript, y frameworks como Django y Flask. Me motiva la idea de combinar creatividad y lógica para resolver problemas y ofrecer experiencias digitales impactantes.</p>
+            <p>Mi nombre es Antonio Abarca y soy Ingeniero en Informática y Desarrollador Web apasionado por crear soluciones digitales innovadoras y eficientes. Me especializo en el diseño y el desarrollo de aplicaciones web modernas, con experiencia en tecnologías como HTML, CSS, JavaScript, y frameworks como Django y Flask. Me motiva la idea de combinar creatividad y lógica para resolver problemas y ofrecer experiencias digitales originales.</p>
             <ul>
-                
-                {% for gc in grupo_conocimientos %}
-                    <h3>{{ gc.nombre }}</h3>
-                    {% for c in conocimientos %}
-                        {% if c.grupo_conocimiento == gc %}
-                            <li>
-                                {{ c.conocimiento }} <div class="bar {{ c.conocimiento }} {{ c.nivel }}"></div>
-                            </li>
-                        {% endif %}
-                    {% endfor %}
-                {% endfor %}
+                <h3>Habilidades</h3>
+                <li>
+                    HTML <div class="bar HTML intermediate-advanced"></div>
+                </li>
+                <li>
+                    CSS <div class="bar CSS intermediate"></div>
+                </li>
+                <li>
+                    Javascript <div class="bar Javascript basic-intermediate"></div>
+                </li>
+                <br>
+                <li>
+                    Python <div class="bar Python intermediate-advanced"></div>
+                </li>
+                <li>
+                    Django <div class="bar Django basic-intermediate"></div>
+                </li>
+                <li>
+                    Flask <div class="bar Flask basic"></div>
+                </li>
+                <br>
+                <li>
+                    SQL <div class="bar SQL intermediate"></div>
+                </li>
+                <li>
+                    noSQL <div class="bar SQL basic"></div>
+                </li>
+                <h3>Idiomas</h3>
+                <li>
+                    Español <div class="bar language advanced"></div>
+                </li>
+                <li>
+                    Inglés <div class="bar language intermediate-advanced"></div>
+                </li>
+                <li>
+                    Japonés <div class="bar language basic"></div>
+                </li>
+                <li>
+                    Portugués <div class="bar language basic"></div>
+                </li>
             </ul>
-                
         </section>
         <hr>
+        <!-- Sección de proyectos -->
         <section id="projects">
             <h2>Estos son algunos de los proyectos que he realizado.. </h2>
             <div>
-                {% for p in proyectos %}
-                    <a href="{{ p.url }}" target="_blank" rel="noopener noreferrer" class="carta-proyecto">
-                        <img src="{{ p.urlImg }}" alt="{{ p.nombre }}">
-                        <h3>{{ p.nombre }}</h3>
-                        <p>{{ p.descripcion }}</p>
-                    </a>
-                {% endfor %}
+                <a href="" target="_blank" rel="noopener noreferrer" class="carta-proyecto">
+                    <img src="" alt="reportesMaquinariaMaqman">
+                    <h3>Reportes de Maquinaria pesada</h3>
+                    <p>Gestión y visualización de reportes de datos para maquinarias pesadas.</p>
+                </a>
+                <a href="" target="_blank" rel="noopener noreferrer" class="carta-proyecto">
+                    <img src="" alt="crudpersonasjuegosxd">
+                    <h3></h3>
+                    <p></p>
+                </a>
+                <a href="" target="_blank" rel="noopener noreferrer" class="carta-proyecto">
+                    <img src="" alt="portafolioCertificado">
+                    <h3>Portafolio de Certificados</h3>
+                    <p>Portafolio con proyectos realizados para la certificación en freeCodeCamp.</p>
+                </a>
             </div>
         </section>
         <hr>
+        <!-- Sección de contacto -->
         <section id="contact">
             <h2>¿Tienes una idea en mente?</h2>
             <h3>Contáctame..</h3>

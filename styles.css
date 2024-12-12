@@ -71,13 +71,7 @@ aside {
     justify-content: center;
     align-items: center;
 }
-.back-label {
-    margin: 5px;
-    background-color: var(--color-base-2);
-}
 .base-label {
-}
-.back-label, .base-label {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,10 +85,10 @@ aside {
 aside input, aside label:not(.base-label) {
     display: none;
 }
-aside input:checked + .back-label {
+aside input:checked + label {
     background-color: greenyellow;
 }
-aside input:checked +.back-label>label i {
+aside input:checked + label i {
     color: var(--color-base-1);
 }
 
