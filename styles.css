@@ -73,17 +73,25 @@ aside {
 }
 .base-label {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 30px;
 }
 .base-label i {
     font-size: 3rem;
 }
+.base-label span {
+    position: absolute;
+    top:50px
+}
 aside input, aside label:not(.base-label) {
     display: none;
+
 }
 aside input:checked + label {
     background-color: greenyellow;
@@ -91,7 +99,6 @@ aside input:checked + label {
 aside input:checked + label i {
     color: var(--color-base-1);
 }
-
 
 /* Secciones */
 section {
